@@ -1,0 +1,208 @@
+*{
+margin:0px;
+padding:0px;
+}
+body{
+	background-image: url('../images/1 (21).jpg') ;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+/*----------------------- style de liste------------------------------*/
+#liste{
+	z-index:2;
+	left:5%;
+	position: fixed;
+	width:100%;
+	height:8%;
+}
+#liste ul {position: absolute;
+ padding:0;
+ margin-top:8px;
+ list-style-type:none;
+ }
+#liste li {
+ margin-left:20px;
+ float:left;/*pour IE*/
+
+ }
+#liste ul li a {
+ display:block;
+ float:left;   
+ width:105%;
+ height:25px;
+ color:white;
+ background-image: linear-gradient(to bottom right, blue, white);
+ text-decoration:none;
+ text-align:center;
+ padding:5px;
+font-size: 14pt;
+font-family: times new roman;
+ border-radius: 50px;
+ /*pour avoir un effet "outset" avec IE :*/
+ border-color:#f0f0f0 #c0c0c0 #c0c0c0 #f0f0f0;
+box-shadow: 2px 2px 1px 1px blue;
+ }
+#liste ul li a:hover {
+	background-image: linear-gradient(to bottom right, white, gray);
+ background-color:#D3D3D3;
+ box-shadow:2px 2px 2px 2px white;
+ color: black;
+ }
+/*-------------------- les bouttons ----------------------*/
+.btn{
+		position: relative;	
+		right:-20px;
+	text-align: center;
+	font-family: monotype corsiva;
+	font-size: 16pt;
+	background-image: linear-gradient(to bottom right, blue, white);
+	border-radius: 20px;
+	box-shadow: 1px 1px 2px 2px blue;
+	text-decoration: none;
+	 color: black;
+	 margin: 20px; 
+}
+.btn:hover{
+	background-image: linear-gradient(to bottom right, white, blue);
+	box-shadow: none;
+	cursor: pointer;
+}
+
+#back {position: fixed;
+right:80px;	
+top:10px;
+border-radius: none;
+border: none;
+font-family: monotyp corsiva;
+font-size:18pt;
+color: white;
+text-decoration:none;
+z-index: 3;
+}
+.back{
+position: fixed;
+height:55px;
+width:70px;
+top:0%;
+right:0%;
+z-index:2;	
+}
+.back:hover{
+height:60px;
+width:75px;	
+cursor: pointer;
+}
+
+/*-----------------------*/
+/*------------------------------ les cotées -------------------------------*/
+#cote{
+	position:fixed;
+	background-image: linear-gradient(to top left, #e0e0e0, blue);
+	height: 100%;
+	width:17%;
+	right:0px;
+	top:0px;
+	border-left-style: outset; 
+	border-top-left-radius:50%;
+	border-bottom-left-radius:50%;
+	z-index: 1;
+}
+#cote1{
+background-image: url('../images/icons/giphy (3).gif');
+background-repeat: no-repeat;
+background-size:100%;
+	background-color: rgba(255,255,255,0.1); 
+	position: absolute;
+	top:0%;
+	right: 0%; 
+	border-bottom-left-radius:10%;
+	border-top-left-radius:70%;
+	height:50%;
+	width:99%;
+}
+#cote1 img{
+	position: relative;
+	left:35%;
+	top:20%;
+	height:100px;
+	width: 100px;
+}
+#clock{
+	position: absolute;
+	top:50%;
+	background-image: linear-gradient( to top left , rgb(255,255,255), rgba(133, 224, 133,0.1));
+	border-radius: 50%;
+}
+#clock p{
+	text-align: center;
+	font-family: monotype corsiva;
+	font-size:16pt;
+	color: white;
+	text-shadow:1px 1px  blue;
+}
+#clock iframe{
+	color: black;
+}
+#cote2{
+
+background-image: url('../images/icons/giphy (11).gif');
+background-repeat: no-repeat;
+background-size:110%;
+position: absolute;
+	bottom:0%; 
+	right: 0%;
+	height:50%;
+	width:99%;
+	border-bottom-left-radius:70%;
+	border-top-left-radius:10%;
+	background-color: rgba(255,255,255,0.1);
+	text-align: center;
+	font-family: monotype corsiva;
+	font-size:17pt;
+	color: white;
+	text-shadow:1px 1px  blue;
+}
+.action{	
+	z-index:4;
+	position: fixed;
+	top:200px;
+	left:90px;
+	display: none;
+	border-radius: 30px;
+	padding: 10px;
+	box-shadow: 3px 3px 5px 5px red;
+	font-size:16pt;
+	background-image:linear-gradient(to top right, #f0f0f0, gray);
+}
+
+.modif{
+	position: absolute;
+	height:25px;
+	width:40px;
+	right:20px;
+	border-radius:20%;
+	display: inline;
+}
+.modif:hover{
+	z-index: 3;
+	height: 30px;
+	width: 45px;
+	background-color:rgba(255,255,255,0.2);
+}
+
+.action input[type="text"]{
+	margin:10px;
+	left:10px;
+	height:30px;
+	width:130%;
+	margin-top:3px;
+	margin-right:10px;
+	background-image: linear-gradient(to bottom right, #c0c0c0, white);
+	border-radius:25%;
+	border-style: outset;
+	text-align: center;
+	font-family: times new roman;
+	font-size:16pt; 
+}

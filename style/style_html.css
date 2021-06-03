@@ -1,0 +1,74 @@
+/*----------------------- style de  barre de communication------------------------------*/
+#communication{
+	z-index: 1;
+	width:100%;
+	height:7%;
+	background-color: gray;
+}
+#communication ul {position: absolute;
+ padding:0;
+ margin-top:8px;
+ list-style-type:none;
+ }
+#communication li {
+ margin-left:20px;
+ float:left; /*pour IE*/
+ }
+#communication ul li a {
+ display:block;
+ float:left;   
+ width:100%;
+ color:white;
+  background:url('../images/fondEcran1.jpg') ;
+ text-decoration:none;
+ text-align:center;
+ padding:5px;
+ border:2px solid;
+ /*pour avoir un effet "outset" avec IE :*/
+ border-color:#DCDCDC #696969 #696969 #DCDCDC;
+ }
+#communication ul li a:hover {
+ background-color:#D3D3D3;
+ border-color:#696969 #DCDCDC #DCDCDC #696969;
+ }
+/*------------------------------------------------------*/
+.sous_liste{
+	z-index:2;
+	left:4%;
+	position: fixed;
+	width:100%;
+	height:8%;
+}
+.sous_liste ul {position: relative;
+ padding:0;
+ margin-top:8px;
+ list-style-type:none;
+ }
+.sous_liste li {
+ margin-left:20px;
+ float:left;/*pour IE*/
+
+ }
+.sous_liste ul li a {
+ display:block;
+ float:left;   
+ width:105%;
+ height:25px;
+ color:white;
+ background-image: linear-gradient(to bottom right, blue, white);
+ text-decoration:none;
+ text-align:center;
+ padding:5px;
+font-size: 14pt;
+font-family: times new roman;
+ border-radius: 50px;
+ /*pour avoir un effet "outset" avec IE :*/
+ border-color:#f0f0f0 #c0c0c0 #c0c0c0 #f0f0f0;
+box-shadow: 2px 2px 1px 1px blue;
+ }
+.sous_liste ul li a:hover {
+	background-image: linear-gradient(to bottom right, white, gray);
+ background-color:#D3D3D3;
+ box-shadow:2px 2px 2px 2px white;
+ color: black;
+ }
